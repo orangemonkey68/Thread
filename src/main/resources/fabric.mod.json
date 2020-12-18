@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "thread",
+  "version": "${version}",
+  "name": "Thread",
+  "description": "A collection of tiny additions, stiching things together",
+  "authors": [
+    "ClareDoesGames"
+  ],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/thread/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "modmenu": [
+      "me.orangemonkey68.thread.config.ThreadModMenuIntegration"
+    ],
+    "client": [
+      "me.orangemonkey68.thread.client.ThreadClient"
+    ],
+    "main": [
+      "me.orangemonkey68.thread.Thread"
+    ]
+  },
+  "mixins": [
+    "thread.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.10.8",
+    "fabric": "*",
+    "minecraft": "1.16.4"
+  }
+}
